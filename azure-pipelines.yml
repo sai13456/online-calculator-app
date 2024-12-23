@@ -10,7 +10,7 @@ steps:
     publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'gab-dotNetSP'
+    azureSubscription: 'dot-service connection'
     appType: 'webAppLinux'
-    appName: 'gab-webapp'
+    appName: 'dot-webapp'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
